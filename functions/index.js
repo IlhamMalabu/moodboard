@@ -8,6 +8,9 @@ const { getAllPosts, postOne, getPost, commentOnPost, likePost, unlikePost, dele
 
 const { signup, login, uploadImage, addUserDetails, getAuthenticatedUser, getUserDetails, markNotificationsRead } = require('./handlers/users')
 
+const cors = require('cors')
+app.use(cors())
+
 
 const FBAuth = require('./utility/FBAuth')
 
